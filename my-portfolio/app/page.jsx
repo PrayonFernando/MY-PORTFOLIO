@@ -16,14 +16,14 @@ const Home = () => {
               <span className="text-accent">Prayon Fernando</span>
             </h1>
             <p className="max-w-[800px] mb-9 text-white/80">
-              I am a passionate Software Engineer and an experienced front-end
+              "I am a passionate Software Engineer and an experienced front-end
               developer. As a front-end engineer with extensive experience in
               frameworks such as React.js, Angular.js, React-Native,
               Backbone.js, and Next.js, I have honed my skills in developing
               dynamic and responsive web applications. Whether it's building
               complex single-page applications, optimizing performance, or
               ensuring a seamless user experience, I am dedicated to leveraging
-              my knowledge to create impactful digital solutions.
+              my knowledge to create impactful digital solutions."
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
