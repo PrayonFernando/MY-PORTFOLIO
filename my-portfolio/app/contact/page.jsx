@@ -18,17 +18,17 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 const info = [
   {
     icon: <FaPhoneAlt />,
-    title: Phone,
+    title: "Phone",
     description: "+(94) 76733 5822",
   },
   {
     icon: <FaEnvelope />,
-    title: E - Mail,
+    title: "E - Mail",
     description: "prayonfernando@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,
-    title: Address,
+    title: "Address",
     description: "28 Retreat Road, Colombo 04, Sri Lanka",
   },
 ];
@@ -54,10 +54,10 @@ const Contact = () => {
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <div className="grid grid-col-1 gap-6 md:grid-cols-2">
-                <Input type="firatname" placehoder="First Name" />
-                <Input type="lastname" placehoder="Last Name" />
-                <Input type="email" placehoder="Email Address" />
-                <Input type="phone" placehoder="Phone Number" />
+                <Input type="firatname" placeholder="First Name" />
+                <Input type="lastname" placeholder="Last Name" />
+                <Input type="email" placeholder="Email Address" />
+                <Input type="phone" placeholder="Phone Number" />
               </div>
               <Select>
                 <SelectTrigger className="w-full">
@@ -72,10 +72,31 @@ const Contact = () => {
                   </SelectGroup>
                 </SelectContent>
               </Select>
+              <Textarea
+                className="h-[200px]"
+                placeholder="Type your message here"
+              />
+              <Button size="md" className="max-w-40">
+                Send Message
+              </Button>
             </form>
           </div>
           <div className="flex flex-1 items-center xl:justify-end xl:order-none order-1 mv-8 xl:mb-0">
-            info
+            <ul className="flex flex-col gap-6">
+              {info.map((item, index) => {
+                return (
+                  <li key={index} className="flex items-center gap-6">
+                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
+                      <div className="text-[28px]">{item.icon}</div>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-white/60">{item.title}</p>
+                      <h3 className="text-xl">{item.description}</h3>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </div>
       </div>
