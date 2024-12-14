@@ -7,19 +7,22 @@ const services = [
   {
     num: "01",
     title: "Web Development",
-    Description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    Description:
+      "I hold teh experience of 1+ years on web development through industrial placement. worked as a Full-stack developer in X-ventures global solution for 4 month and 1 year as a web/mobile developer in creo360",
     href: "",
   },
   {
     num: "02",
     title: "Mobile Development",
-    Description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    Description:
+      "While working at Creo360, i gained knowledge on mobile development holding teh experience for 1 year.",
     href: "",
   },
   {
     num: "03",
     title: "UI/UX Design",
-    Description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    Description:
+      "While working as a web/mobile developer at Creo360, I also carried out my role as a UI/UX designer using figma",
     href: "",
   },
 ];
